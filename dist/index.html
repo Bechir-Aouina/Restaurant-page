@@ -1,27 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-  <header class="header">
-    <nav class="navbar">
-        <div class="logo">
-            <img src="img/logo.png" alt="" >
-            <span>Cuisine</span>
-        </div>
-        <div class="buttons">
-            <button class="about">About</button>
-            <button class="Menu">Menu</button>
-            <button class="Contact">Contact</button>
-        </div>
-    </nav>
+    <header class="header">
+        <nav class="navbar">
+            <div class="left-btns">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
 
+                </div>
+                <div class="buttons">
+                    <button data="about" class="about">About</button>
+                    <button data="menu" class="Menu">Menu</button>
+                    <button data="contact" class="Contact">Contact</button>
+                </div>
+            </div><!--  -->
+            <div class="right-btns">
+                <input type="text" placeholder="✒️ Search">
+                <button class="order"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+           
+        </nav>
+    </header>
+    <section class="section" id="about">
 
-  </header>
+        <div class="about-wrapper">
+            <div class="about-text">
+                <h1>Asian <br> Cuisine</h1>
+                <p>At Bechir's Restaurant we strive to bring people the best Tunsian food by using the freshest and best
+                    ingredients we can find</p>
+            </div>
+            <div class="about-btns">
+                <button class="about-btn1">Order Now <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                <button class="about-btn2"  data="menu">Menu <span><i class="fa-solid fa-arrow-right"></i></span></button>
+            </div>
+            
+        </div>
+        <img src="img/main-food.png" alt="">
+    </section>
+    <section class="section active" id="menu">
+        <h1>Chef's specials</h1>
+        <p>Our chef Bechir has been cooking for more than 20years unsing best materails to cook the best dishes in town
+        </p>
+        <div class="food-cards">
+            <div class="card">
+                <img src="img/sushi.png" alt="">
+                <h3>Sushi</h3>
+                <p>Experience the art of sushi with our fresh, exquisite rolls, meticulously prepared to deliver a burst
+                    of flavor in every bite</p>
+                <h1>15.00$</h1>
+            </div>
+            <div class="card">
+                <img src="img/noodle.png" alt="">
+                <h3>Noodles</h3>
+                <p>Discover the ultimate comfort food with our mouthwatering noodles, perfectly crafted to satisfy your
+                    cravings with every bite</p>
+                <h1>22.50$</h1>
+            </div>
+            <div class="card">
+            <img src="img/biryani.png" alt="">
+            <h3>Biryani</h3>
+            <p>Savor the rich, aromatic flavors of our authentic biryani, a perfect blend of fragrant basmati rice, tender meat, and exotic spices.</p>
+                <h1>31.50$</h1>
+        </div>
+    </section>
+    <section class="section" id="contact">
+        <h1>contact</h1>
+    </section>
 
 
 
@@ -31,4 +86,5 @@
 
     <script src="bundle.js"></script>
 </body>
+
 </html>
